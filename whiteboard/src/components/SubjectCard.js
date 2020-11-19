@@ -4,7 +4,6 @@ import { DefaultEffects } from '@fluentui/react';
 import { Card } from '@uifabric/react-cards';
 import { divProperties, FontWeights, Text, DefaultPalette, Stack, TooltipHostBase} from 'office-ui-fabric-react';
 import stackItemStyles from '../styles/commonStyles'
-
 import Circle from 'react-circle';
 
 // todo: clicking button should lead to another page
@@ -12,6 +11,8 @@ const alertClicked = () => {
   alert('Clicked');
 };
   
+//! fixme: avoid tightly coupling subject & grade progress components --> since subjects will be used elsewhere
+//! fixme: rename the class
 class SubjectCard extends React.Component {
 
   constructor(props){

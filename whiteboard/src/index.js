@@ -1,13 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import Grades from './pages/Grades'
 import reportWebVitals from './reportWebVitals';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "react-bootstrap-table-next/dist/react-bootstrap-table2.min.css";
+import Grades from './pages/Grades'
+import MathGrades from './pages/MathGrades';
 
 ReactDOM.render(
   <React.StrictMode>    
-    <Grades />
+    {/* <Grades /> */}
+    {/* <MathGrades/> */}
+    <MathGrades/>
   </React.StrictMode>,
   document.getElementById('root')
 );
