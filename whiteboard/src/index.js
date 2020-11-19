@@ -2,11 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Grades from './pages/Grades'
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
+  <React.StrictMode>    
+    <Grades />
   </React.StrictMode>,
   document.getElementById('root')
 );
