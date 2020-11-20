@@ -1,10 +1,7 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { DefaultEffects } from '@fluentui/react';
 import { Card } from '@uifabric/react-cards';
-import { divProperties, FontWeights, Text, DefaultPalette, Stack, TooltipHostBase} from 'office-ui-fabric-react';
-import stackItemStyles from '../styles/commonStyles'
-import Circle from 'react-circle';
+import { FontWeights, Text } from 'office-ui-fabric-react';
 
 // todo: clicking button should lead to another page
 const alertClicked = () => {
@@ -13,12 +10,11 @@ const alertClicked = () => {
   
 //! fixme: avoid tightly coupling subject & grade progress components --> since subjects will be used elsewhere
 //! fixme: rename the class
-class SubjectCard extends React.Component {
+class CalendarSubjectCard extends React.Component {
 
   constructor(props){
     super(props);
   }
-
 
     render() {
         
@@ -52,62 +48,30 @@ class SubjectCard extends React.Component {
                 backgroundColor: this.props.courseColor,                
             },            
         }
-
-        // Styles definition
-        const stackStyles = {
-          root: {
-            background: DefaultPalette.whiteTranslucent40,
-          },
-        };
-
-
-
-        // Tokens definition
-        const stackTokens = {
-          childrenGap: 5,
-          padding: 10,
-        };
             
-
       return(
-        <div>          
-          <Stack horizontal styles={stackStyles} tokens={stackTokens}>            
-            <Stack.Item grow={3} styles={stackItemStyles}>              
+        <div>                  
+            <Card aria-label="Clickable vertical card" onClick={alertClicked} tokens={cardTokens} styles={courseStyles} style={{ boxShadow: DefaultEffects.elevation16 }}  >
 
-                <Card aria-label="Clickable vertical card" onClick={alertClicked} tokens={cardTokens} styles={courseStyles} style={{ boxShadow: DefaultEffects.elevation16 }}  >
-
-                  <Card.Section
-                    fill
-                    verticalAlign="end"
-                    styles={backgroundImageCardSectionStyles}
-                    tokens={backgroundImageCardSectionTokens}>
-
+                <Card.Section fill verticalAlign="end" styles={backgroundImageCardSectionStyles} tokens={backgroundImageCardSectionTokens}>
                     {/* text component below is used for the image */}
                     <Text variant="superLarge">              
                     </Text>
-                  </Card.Section>
+                </Card.Section>
 
-                  <Card.Section>
+                <Card.Section>
                     <Text variant="small" styles={subduedTextStyles}>
-                      {this.props.teacherName}
+                        {this.props.teacherName}
                     </Text>
+                
                     <Text variant="xLarge" styles={descriptionTextStyles}> {this.props.subjectName}  </Text>
-                  </Card.Section>
+                </Card.Section>
 
-                </Card>
-
-            </Stack.Item>
-
-            <Stack.Item grow={3} styles={stackItemStyles}>              
-              <Circle progress={this.props.gradePercent} progressColor={this.props.courseColor} textColor={this.props.courseColor} animationDuration="1s" animate={true} size={150} />     
-            </Stack.Item>
-
-
-           </Stack>        
+            </Card>      
         </div>
       );
     }
 }
 
-export default SubjectCard;
+export default CalendarSubjectCard;
   

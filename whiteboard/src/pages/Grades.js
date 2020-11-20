@@ -1,21 +1,8 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import SubjectCard from '../components/SubjectCard'
+import GradesSubjectCard from '../components/GradesSubjectCard'
 import { Stack } from 'office-ui-fabric-react/lib/Stack';
 import stackItemStyles from '../styles/commonStyles'
-
-class Course {
-  constructor(subjectName, teacherName, courseColor, destinationRoute, courseImageURL, gradePercent, cardTextColor ) {
-    this.subjectName = subjectName;
-    this.teacherName = teacherName;
-    this.courseColor = courseColor;
-    this.destinationRoute = destinationRoute;
-    this.courseImageURL = courseImageURL;
-    this.destinationRoute = courseImageURL;
-    this.gradePercent = gradePercent;
-    this.cardTextColor = cardTextColor;    
-  }
-}
+import Course from '../types/Course'
 
 class Grades extends React.Component {
   constructor(props){
@@ -52,7 +39,7 @@ class Grades extends React.Component {
               <Stack>
                   {this.state.courses.map(course => (
                       <Stack.Item>                      
-                       <SubjectCard subjectName={course.subjectName} teacherName={course.teacherName} courseColor={course.courseColor} destinationRoute={course.destinationRoute} courseImageURL={course.courseImageURL} gradePercent={course.gradePercent} cardTextColor={course.cardTextColor} />            
+                       <GradesSubjectCard subjectName={course.subjectName} teacherName={course.teacherName} courseColor={course.courseColor} destinationRoute={course.destinationRoute} courseImageURL={course.courseImageURL} gradePercent={course.gradePercent} cardTextColor={course.cardTextColor} />            
                       </Stack.Item>
                   ))} 
               </Stack> 
