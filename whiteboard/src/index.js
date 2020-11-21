@@ -8,6 +8,7 @@ import 'react-big-calendar/lib/css/react-big-calendar.css';
 import Grades from './pages/Grades'
 import MathGrades from './pages/MathGrades';
 import Calendar from './pages/Calendar'
+import Login from './pages/Login'
 import EventsByCourse from './components/EventsByCourse'
 
 ReactDOM.render(
@@ -15,7 +16,8 @@ ReactDOM.render(
     {/* <Grades /> */}
     {/* <MathGrades/> */}
     {/* <MathGrades/> */}
-    {/* <Calendar/>     */}
+    {/* <Calendar/>   */}
+    { <Login/>   }
     <EventsByCourse/>
   </React.StrictMode>,
   document.getElementById('root')
