@@ -9,6 +9,8 @@ import ScienceCalendarEvents from '../data/subject-events/ScienceCalendarEvents'
 import ReadingCalendarEvents from '../data/subject-events/ReadingCalendarEvents'
 import SocialScienceCalendarEvents from '../data/subject-events/SocialScienceCalendarEvents'
 
+const wrapStackTokens = { childrenGap: 70 };
+
 class Grades extends React.Component {
   constructor(props){
     super(props);
@@ -42,7 +44,7 @@ class Grades extends React.Component {
             </Stack.Item>
 
             <Stack.Item styles={stackItemStyles}>              
-              <Stack>
+              <Stack horizontal wrap tokens={wrapStackTokens}>
                   {this.state.courses.map(course => (
                       <Stack.Item>                      
                        <GradesPageSubject subjectName={course.subjectName} teacherName={course.teacherName} courseColor={course.courseColor} destinationRoute={course.destinationRoute} courseImageURL={course.courseImageURL} gradePercent={course.gradePercent} cardTextColor={course.cardTextColor} />            

@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { DefaultEffects } from '@fluentui/react';
 import { Card } from '@uifabric/react-cards';
-import {FontWeights, Text, DefaultPalette, Stack} from 'office-ui-fabric-react';
+import { FontWeights, Text, DefaultPalette, Stack } from 'office-ui-fabric-react';
 import stackItemStyles from '../styles/commonStyles'
 import Circle from 'react-circle';
 import { withRouter } from "react-router-dom";
