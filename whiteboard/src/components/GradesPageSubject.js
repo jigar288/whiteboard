@@ -5,19 +5,21 @@ import { Card } from '@uifabric/react-cards';
 import {FontWeights, Text, DefaultPalette, Stack} from 'office-ui-fabric-react';
 import stackItemStyles from '../styles/commonStyles'
 import Circle from 'react-circle';
+import { withRouter } from "react-router-dom";
 
-// todo: clicking button should lead to another page
-const alertClicked = () => {
-  alert('Clicked');
-};
-  
 //! fixme: avoid tightly coupling subject & grade progress components --> since subjects will be used elsewhere
 //! fixme: rename the class
-class GradesSubjectCard extends React.Component {
+class GradesPageSubject extends React.Component {
 
-  constructor(props){
-    super(props);
-  }
+    constructor(props){
+      super(props);
+    }
+
+
+    viewSubjectGrade = () => {
+      // destinationRoute is declare from 'Course' javascript class & defined via an object in Grades page
+      this.props.history.push(this.props.destinationRoute);
+    }
 
 
     render() {
@@ -74,7 +76,7 @@ class GradesSubjectCard extends React.Component {
           <Stack horizontal styles={stackStyles} tokens={stackTokens}>            
             <Stack.Item grow={3} styles={stackItemStyles}>              
 
-                <Card aria-label="Clickable vertical card" onClick={alertClicked} tokens={cardTokens} styles={courseStyles} style={{ boxShadow: DefaultEffects.elevation16 }}  >
+                <Card aria-label="Clickable vertical card" onClick={this.viewSubjectGrade} tokens={cardTokens} styles={courseStyles} style={{ boxShadow: DefaultEffects.elevation16 }}  >
 
                   <Card.Section
                     fill
@@ -109,5 +111,5 @@ class GradesSubjectCard extends React.Component {
     }
 }
 
-export default GradesSubjectCard;
+export default withRouter(GradesPageSubject);
   

@@ -8,7 +8,17 @@ import 'react-big-calendar/lib/css/react-big-calendar.css';
 import Grades from './pages/Grades'
 import MathGrades from './pages/MathGrades';
 import Calendar from './pages/Calendar'
+import Home from './pages/Home'
 import EventsByCourse from './components/EventsByCourse'
+import App from './App'
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+} from "react-router-dom";
+
 
 ReactDOM.render(
   <React.StrictMode>    
@@ -16,12 +26,8 @@ ReactDOM.render(
     {/* <MathGrades/> */}
     {/* <MathGrades/> */}
     {/* <Calendar/>     */}
-    <EventsByCourse/>
+    {/* <EventsByCourse/> */}
+    <App/>
   </React.StrictMode>,
   document.getElementById('root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

@@ -3,7 +3,8 @@ import { Stack, DefaultPalette } from 'office-ui-fabric-react';
 import stackItemStyles from '../styles/commonStyles'
 import { Card } from '@uifabric/react-cards';
 import { Table } from 'react-bootstrap';
-
+import { withRouter } from "react-router-dom";
+import { PrimaryButton } from '@fluentui/react';
 
 const stackStyles = {
   root: {
@@ -25,23 +26,52 @@ const verticalGapStackTokens = {
     - https://stackoverflow.com/questions/52064303/reactjs-pass-props-with-redirect-component
     - https://www.google.com/search?q=react+pass+props+redirect
 */
+
+
 class EventsByCourse extends React.Component {
+
+    constructor(props) {
+      super(props);
+      this.state = { events: [] };
+
+      this.setState(state => ({
+        events: this.props.location.state.subjectEvents
+      }));
+
+    }
+
+    componentDidMount(){
+
+      this.state.events.map( (item, key)  => (
+        console.log(item.assignmentName + ' from state')
+      ));
+
+    }
+
+    goBack = () => {
+      this.props.history.push('/calendar');
+    }
+
     render() {
+
+      const rowsData = this.props.location.state.subjectEvents.map( (item, key)  => (
+        <tr key={key}>
+          <td>{item.assignmentName}</td>
+          <td>{item.dueDate}</td>
+        </tr> 
+      ));
+
       return (
         <div>
-
-      {/*
-      
-      */}
       <Stack styles={stackStyles} tokens={verticalGapStackTokens}>
 
         <Stack.Item order={1}>
-          <span>Item One: Back button</span>
+          <PrimaryButton onClick={this.goBack}>Back</PrimaryButton>
         </Stack.Item>
 
         <Stack.Item styles={stackItemStyles} order={2}>          
-          <h2>Subject: Reading</h2>      
-        </Stack.Item>        
+          <h2>Subject: {this.props.location.state.subjectName}</h2>      
+        </Stack.Item> 
 
         <Stack.Item styles={stackItemStyles} order={2}>
             <Table striped bordered hover>
@@ -52,18 +82,7 @@ class EventsByCourse extends React.Component {
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Exam 5</td>
-                    <td>11/8/2020</td>
-                  </tr>
-                  <tr>
-                    <td>Quiz 7</td>
-                    <td>11/18/2020</td>
-                  </tr>
-                  <tr>
-                    <td>Homework 5</td>
-                    <td>11/28/2020</td>
-                  </tr>
+                  {rowsData}
                 </tbody>
             </Table>
         </Stack.Item>
@@ -75,4 +94,4 @@ class EventsByCourse extends React.Component {
     }
 }
 
-export default EventsByCourse;
+export default withRouter(EventsByCourse);

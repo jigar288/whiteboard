@@ -1,5 +1,5 @@
 import React from 'react';
-import MathGradesData from '../gradedata/MathGradeData'
+import MathGradesData from '../data/grades/MathGradeData'
 import SubjectGrade from '../components/SubjectGrade'
 
 
