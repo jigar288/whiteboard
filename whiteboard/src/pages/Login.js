@@ -16,7 +16,11 @@ export default function Login() {
     event.preventDefault();
   }
 
-  function _alertClicked(){
+  function _loginClicked(){
+    alert('Clicked');
+  }
+
+  function _forgotPasswordClicked(){
     alert('Clicked');
   }
 
@@ -33,7 +37,9 @@ export default function Login() {
         <Label>Login</Label>
         <TextField label="Email" placeholder="Enter Email Here" />
         <TextField label="Password" placeholder="Enter Password Here" type="password" canRevealPassword />
-        <PrimaryButton text="Login" onClick={_alertClicked} allowDisabledFocus/>
+        <PrimaryButton text="Login" onClick={_loginClicked} allowDisabledFocus/>
+        <Label></Label>
+        <PrimaryButton text="Forgot Password?" onClick={_forgotPasswordClicked} allowDisabledFocus/>
       </Stack>
 
         {/*
