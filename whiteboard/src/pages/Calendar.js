@@ -1,13 +1,13 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import CalendarComponent from '../components/CalendarComponent'
 import { Stack, DefaultPalette, AutoScroll, PrimaryButton } from 'office-ui-fabric-react';
 import Course from '../types/Course'
 import CalendarSubjectCard from '../components/CalendarSubjectCard'
-import MathCalendarEvents from '../data/subject-events/MathCalendarEvents'
-import EnglishCalendarEvents from '../data/subject-events/EnglishCalendarEvents'
-import ScienceCalendarEvents from '../data/subject-events/ScienceCalendarEvents'
-import ReadingCalendarEvents from '../data/subject-events/ReadingCalendarEvents'
-import SocialStudiesCalendarEvents from '../data/subject-events/SocialStudiesCalendarEvents'
+import  { MathCalendarEvents } from '../data/subject-events/MathCalendarEvents'
+import { EnglishCalendarEvents } from '../data/subject-events/EnglishCalendarEvents'
+import { ScienceCalendarEvents } from '../data/subject-events/ScienceCalendarEvents'
+import { ReadingCalendarEvents } from '../data/subject-events/ReadingCalendarEvents'
+import { SocialStudiesCalendarEvents } from '../data/subject-events/SocialStudiesCalendarEvents'
 import stackItemStyles from '../styles/commonStyles';
 
 // Styles definition
@@ -59,10 +59,6 @@ class Calendar extends React.Component {
     this.state.courses.push(socialStudies);
     this.state.courses.push(reading);
   }
-
-  AddEvent = () => {
-    alert('Adding Event');
-  }
   
   render() {
 
@@ -72,8 +68,6 @@ class Calendar extends React.Component {
         background: DefaultPalette.white,
       },
     };
-
-    let { disabled } = this.props;
 
     return (
       <div>
@@ -96,9 +90,6 @@ class Calendar extends React.Component {
 
           </Stack.Item>
           <Stack.Item order={2}>
-            <PrimaryButton styles={stackItemStyles} text="Add Event" onClick={this.AddEvent} disabled={disabled}/>
-          </Stack.Item>
-          <Stack.Item order={3}>
 
             <CalendarComponent/>
 

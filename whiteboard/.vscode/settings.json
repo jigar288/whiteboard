@@ -1,0 +1,25 @@
+{
+    "todo-tree.highlights.defaultHighlight": {
+        "type": "text",
+        "foreground": "red",
+        "opacity": 50,
+        "iconColour": "red"
+    },
+    "todo-tree.highlights.customHighlight": {
+        
+        
+
+        "BUG": {
+            "icon": "bug"
+        },
+        "FIXME": {
+            "icon": "flame",
+            "foreground": "brown",
+            "iconColour": "brown",
+            "gutterIcon": true
+        },
+        "TODO": {
+            "icon": "check",
+        }
+    }
+}

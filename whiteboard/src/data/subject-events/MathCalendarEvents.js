@@ -1,5 +1,4 @@
-// TODO: Add Future
-const MathCalendarEvents = [
+export const MathCalendarEvents = [
     {
         assignmentName: 'Math Homework 3: Shapes',
         dueDate: '11/12/2020',
@@ -85,5 +84,3 @@ const MathCalendarEvents = [
         submitted: false
     },
 ]
-
-export default MathCalendarEvents;

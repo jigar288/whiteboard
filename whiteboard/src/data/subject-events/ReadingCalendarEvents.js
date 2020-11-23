@@ -1,4 +1,4 @@
-const ReadingCalendarEvents = [
+export const ReadingCalendarEvents = [
     {
         assignmentName: 'Reading HW 2',
         dueDate: '9/10/2020',
@@ -147,5 +147,3 @@ const ReadingCalendarEvents = [
         submitted: false
     }               
 ]
-
-export default ReadingCalendarEvents;

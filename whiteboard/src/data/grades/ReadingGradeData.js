@@ -1,4 +1,6 @@
 //use this instead of products or copying to products
+
+// TODO: Update details link
 export const ReadingGradeData = [
     {
         assignmentName: 'Reading HW 2',
