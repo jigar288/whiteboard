@@ -2,7 +2,7 @@ const stackItemStyles = {
     root: {
       alignItems: 'center',
       display: 'flex',            
-      justifyContent: 'center',
+      justifyContent: 'center'
     },
 };
 
