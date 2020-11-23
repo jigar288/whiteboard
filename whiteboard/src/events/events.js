@@ -35,8 +35,7 @@ MathCalendarEvents.forEach(item => {
     allDay: true,
     start: startDate,
     end: endDate,
-    submitted: item.submitted,
-    previousEvent: events[events.length-1]
+    submitted: item.submitted
   });
 });
 
@@ -66,8 +65,7 @@ ReadingCalendarEvents.forEach(item => {
     allDay: true,
     start: startDate,
     end: endDate,
-    submitted: item.submitted,
-    previousEvent: events[events.length-1]
+    submitted: item.submitted
   });
 });
 
@@ -97,8 +95,7 @@ EnglishCalendarEvents.forEach(item => {
     allDay: true,
     start: startDate,
     end: endDate,
-    submitted: item.submitted,
-    previousEvent: events[events.length-1]
+    submitted: item.submitted
   });
 });
 
@@ -128,8 +125,7 @@ ScienceCalendarEvents.forEach(item => {
     allDay: true,
     start: startDate,
     end: endDate,
-    submitted: item.submitted,
-    previousEvent: events[events.length-1]
+    submitted: item.submitted
   });
 });
 
@@ -159,47 +155,8 @@ SocialStudiesCalendarEvents.forEach(item => {
     allDay: true,
     start: startDate,
     end: endDate,
-    submitted: item.submitted,
-    previousEvent: events[events.length-1]
+    submitted: item.submitted
   });
 });
 
 export default events;
-
-// export default [
-//   {
-//     color: '#E74856',
-//     title: 'Math Homework 3: Shapes',
-//     start: new Date(2020, 10, 12, 23, 0, 0),
-//     end: new Date(2020, 10, 12, 23, 59, 59),
-//   },
-//   {
-//     color: '#E74856',
-//     title: 'Math Quiz 1: Triangles',
-//     start: new Date(2020, 10, 13, 11, 0, 0),
-//     end: new Date(2020, 10, 13, 12, 0, 0),
-//   },
-//   {
-//     color: '#E74856',
-//     title: 'Math Quiz 2: Subtraction',
-//     start: new Date(2020, 10, 15, 11, 0, 0),
-//     end: new Date(2020, 10, 15, 12, 0, 0),
-//   },
-//   {
-//     color: '#E74856',
-//     title: 'Math Quiz 3: Addition',
-//     start: new Date(2020, 10, 16, 11, 0, 0),
-//     end: new Date(2020, 10, 16, 12, 0, 0),
-//   },
-//   {
-//     title: 'Study For Math Exam!',
-//     start: new Date(2020, 10, 17, 16, 0, 0),
-//     end: new Date(2020, 10, 17, 18, 0, 0),
-//   },
-//   {
-//     color: '#E74856',
-//     title: 'Math Exam 1: Addition and Subtraction',
-//     start: new Date(2020, 10, 18, 17, 0, 0),
-//     end: new Date(2020, 10, 18, 19, 30, 0),
-//   },
-// ]

@@ -10,6 +10,12 @@ const localizer = momentLocalizer(moment) // or globalizeLocalizer
 const cardDim = {height: 300, width: 282};
 
 class CalendarComponent extends React.Component {
+  constructor(...args) {
+    super(...args)
+
+    this.state = { events }
+  }
+
   eventStyleGetter(events) {
     var style = {
       backgroundColor: events.color,
@@ -31,28 +37,44 @@ class CalendarComponent extends React.Component {
       let cardHeight = (6-numCards)*cardDim.height;
       let calendarHeight = events.start.getHours()*50;
       window.scroll({top: cardHeight+calendarHeight, behavior: 'smooth'});
-      // alert(cardHeight + calendarHeight);
+      // alert(cardHeight + calendarHeight + ', ' + document.documentElement.offsetHeight);
     } else {
       alert(events.title + ' was clicked');
+    }
+  }
+
+  handleSelect = ({start, end}) => {
+    const title = window.prompt('New Event Name');
+    if(title) { // Ensure user entered title
+      events.push(
+        {
+          title,
+          color: '#8caebf',
+          start,
+          end,
+        }
+      );
+      this.setState({
+        events: events
+      });
     }
   }
 
   render() {
     return (
       <div>
-
-
-      <Calendar
-        localizer={localizer}
-        events={events}
-        startAccessor="start"
-        endAccessor="end"
-        views={['week', 'month', 'agenda' ]}
-        defaultView={'week'}
-        selectable
-        onSelectEvent={(this.eventClick)}
-        eventPropGetter={(this.eventStyleGetter)}
-      />
+        <Calendar
+          localizer={localizer}
+          events={events}
+          startAccessor="start"
+          endAccessor="end"
+          views={['week', 'month', 'agenda' ]}
+          defaultView={'week'}
+          selectable
+          onSelectEvent={(this.eventClick)}
+          onSelectSlot={this.handleSelect}
+          eventPropGetter={(this.eventStyleGetter)}
+        />
     </div>
     );
   }
