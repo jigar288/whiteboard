@@ -1,6 +1,6 @@
 export const MathCalendarEvents = [
     {
-        assignmentName: 'Math Homework 3: Shapes',
+        assignmentName: 'Math Homework 4: Shapes',
         dueDate: '11/12/2020',
         timeStart: [22, 0, 0],
         timeEnd: [23, 59, 59],

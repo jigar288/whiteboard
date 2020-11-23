@@ -46,7 +46,7 @@ class SubjectCards extends React.Component {
             
       return(
         <div>                  
-            <Card aria-label="Clickable vertical card" onClick={viewSubjectEvents} tokens={cardTokens} styles={courseStyles} style={{ boxShadow: DefaultEffects.elevation16 }}  >
+            <Card aria-label="Clickable vertical card" onClick={this.props.viewSubjectEvents} tokens={cardTokens} styles={courseStyles} style={{ boxShadow: DefaultEffects.elevation16 }}  >
 
                 <Card.Section fill verticalAlign="end" styles={backgroundImageCardSectionStyles} tokens={backgroundImageCardSectionTokens}>
                     {/* text component below is used for the image */}
