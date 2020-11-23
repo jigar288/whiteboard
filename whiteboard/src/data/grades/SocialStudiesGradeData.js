@@ -1,33 +1,34 @@
 // TODO: Update details link
 export const SocialStudiesGradeData = [
     {
-        assignmentName: 'Social Studies Hw 3',
+        assignmentName: 'Homework 3: States',
         type: 'Homework',
         grade: 100,
-        details: '/link-to-details-page'
+        details: '/link-to-details-page',
     },
+  
     {
-        assignmentName: 'Social Studies Quiz 2',
+        assignmentName: 'Quiz 4: Continents',
         type: 'Quiz',
-        grade: 100,
-        details: '/link-to-details-page'
-    },
+        grade: 85,
+        details: '/link-to-details-page',
+    }, 
     {
-        assignmentName: 'Social Studies Exam 1',
+        assignmentName: 'Exam 1: Oceans',
         type: 'Exam',
-        grade: 91,
-        details: '/link-to-details-page'
+        grade: 80,
+        details: '/link-to-details-page',
     },
     {
-        assignmentName: 'Social Studies Quiz 3',
+        assignmentName: 'Quiz 3: Biomes',
         type: 'Quiz',
-        grade: 90,
-        details: '/link-to-details-page'
-    },
+        grade: 75,
+        details: '/link-to-details-page',
+    }, 
     {
-        assignmentName: 'Social Studies Quiz 4',
+        assignmentName: 'Quiz 2: Presidents',
         type: 'Quiz',
-        grade: 100,
-        details: '/link-to-details-page'
-    }
+        grade: 95,
+        details: '/link-to-details-page',
+    }     
 ]
