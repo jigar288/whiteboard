@@ -1,5 +1,5 @@
 //use this instead of products or copying to products
-const MathGradeData = [
+export const MathGradeData = [
     {
         assignmentName: 'Homework 3: Shapes',
         type: 'Homework',
@@ -7,29 +7,27 @@ const MathGradeData = [
         details: '/link-to-details-page',
     },
     {
-        assignmentName: 'Quiz 4: Triangles',
+        assignmentName: 'Quiz 1: Triangles',
         type: 'Quiz',
         grade: 85,
         details: '/link-to-details-page',
-    }, 
+    },
     {
-        assignmentName: 'Exam 1: Addition and Subtraction',
-        type: 'Exam',
-        grade: 80,
-        details: '/link-to-details-page',
-    }, 
-    {
-        assignmentName: 'Quiz 3: Subtraction',
+        assignmentName: 'Quiz 2: Subtraction',
         type: 'Quiz',
         grade: 75,
         details: '/link-to-details-page',
     }, 
     {
-        assignmentName: 'Quiz 2: Addition',
+        assignmentName: 'Quiz 3: Addition',
         type: 'Quiz',
         grade: 95,
         details: '/link-to-details-page',
-    }                
+    },
+    {
+        assignmentName: 'Exam 1: Addition and Subtraction',
+        type: 'Exam',
+        grade: 80,
+        details: '/link-to-details-page',
+    }     
 ]
-
-export default MathGradeData;

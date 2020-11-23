@@ -1,4 +1,4 @@
-const SocialScienceCalendarEvents = [
+const SocialStudiesCalendarEvents = [
     {
         assignmentName: 'Social Science HW 3',
         dueDate: '8/12/2020',
@@ -21,4 +21,4 @@ const SocialScienceCalendarEvents = [
     }                
 ]
 
-export default SocialScienceCalendarEvents;
+export default SocialStudiesCalendarEvents;
