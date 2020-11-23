@@ -1,41 +1,27 @@
-//use this instead of products or copying to products
-
-// TODO: Update details link
 export const ReadingGradeData = [
     {
-        assignmentName: 'Reading HW 2',
-        type: 'Reading',
-        grade: 0,
-        details: '/link-to-details-page'
-    },
-    {
-        assignmentName: 'Reading HW 3',
-        type: 'Reading',
+        assignmentName: 'Homework 3: Grammar',
+        type: 'Homework',
         grade: 100,
         details: '/link-to-details-page',
     },
+  
     {
-        assignmentName: 'Reading Quiz 4',
+        assignmentName: 'Quiz 4: Grammar',
         type: 'Quiz',
-        grade: 95,
-        details: '/link-to-details-page'
-    },
-    {
-        assignmentName: 'Reading Exam 1',
-        type: 'Exam',
         grade: 85,
-        details: '/link-to-details-page'
+        details: '/link-to-details-page',
+    }, 
+    {
+        assignmentName: 'Exam 1: Vocabulary',
+        type: 'Exam',
+        grade: 80,
+        details: '/link-to-details-page',
     },
     {
-        assignmentName: 'Reading Quiz 3',
+        assignmentName: 'Quiz 3: Conjunctions',
         type: 'Quiz',
-        grade: 100,
-        details: '/link-to-details-page'
-    },
-    {
-        assignmentName: 'Reading Quiz 2',
-        type: 'Quiz',
-        grade: 90,
-        details: '/link-to-details-page'
-    }
+        grade: 75,
+        details: '/link-to-details-page',
+    }     
 ]
