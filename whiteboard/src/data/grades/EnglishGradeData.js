@@ -3,33 +3,33 @@
 // TODO: Update details link
 export const EnglishGradeData = [
     {
-        assignmentName: 'English HW 3',
+        assignmentName: 'Homework 3: Essay 3',
         type: 'Homework',
+        grade: 100,
+        details: '/link-to-details-page',
+    },
+    {
+        assignmentName: 'Quiz 4: Green Eggs and Ham',
+        type: 'Quiz',
         grade: 85,
-        details: '/link-to-details-page'
-    },
+        details: '/link-to-details-page',
+    }, 
     {
-        assignmentName: 'English Quiz 2',
-        type: 'Quiz',
-        grade: 90,
-        details: 'link-to-details-page'
-    },
-    {
-        assignmentName: 'English Quiz 3',
-        type: 'Quiz',
-        grade: 80,
-        details: 'link-to-details-page'
-    },
-    {
-        assignmentName: 'English Exam 1',
+        assignmentName: 'Exam 1: Essay revisions',
         type: 'Exam',
-        grade: 92,
-        details: 'link-to-details-page'
+        grade: 80,
+        details: '/link-to-details-page',
     },
     {
-        assignmentName: 'English Quiz 4',
+        assignmentName: 'Quiz 3: Book Reading',
+        type: 'Quiz',
+        grade: 75,
+        details: '/link-to-details-page',
+    }, 
+    {
+        assignmentName: 'Quiz 2: Book quiz',
         type: 'Quiz',
         grade: 95,
-        details: 'link-to-details-page'
-    }
+        details: '/link-to-details-page',
+    }     
 ]
