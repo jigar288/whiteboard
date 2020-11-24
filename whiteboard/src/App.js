@@ -14,6 +14,9 @@ import SubjectSpecificGrades from './components/SubjectSpecificGrades'
 import ViewGradeDetails from './components/ViewGradeDetails'
 import SubjectSpecificAssignments from './components/SubjectSpecificAssignments'
 import SubmitAssignmentComponent from './components/SubmitAssignmentComponent'
+import HomeLogin from './pages/HomeLogin'
+import Login from './pages/Login'
+import Forgot from './pages/Forgot'
 
 function App() {
   return (
@@ -31,7 +34,10 @@ function App() {
           <Route exact path="/submit-assignments" component={SubmitAssignmentsPage} />   
           <Route exact path="/submit-assignment-file" component={SubmitAssignmentComponent} />             
           <Route exact path="/view-grade-details" component={ViewGradeDetails} />    
-          <Route exact path="/submit-assignments-by-subject" component={SubjectSpecificAssignments} />                      
+          <Route exact path="/submit-assignments-by-subject" component={SubjectSpecificAssignments} />                                
+          <Route exact path="/home-login" component={HomeLogin} />
+          <Route exact path="/login" component={Login} />
+          <Route exact path="/forgot" component={Forgot} />
           <Route exact path="/" component={Home} />
         </Switch>
       </div>
