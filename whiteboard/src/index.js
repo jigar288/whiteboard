@@ -28,7 +28,7 @@ ReactDOM.render(
     {/* <MathGrades/> */}
     {/* <Calendar/>     */}
     {/* <EventsByCourse/> */}
-    { <Login/> }
+    {/* <Login/> */}
     <App/>
   </React.StrictMode>,
   document.getElementById('root')
