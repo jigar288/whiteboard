@@ -8,6 +8,13 @@ import { EnglishCalendarEvents } from '../data/subject-events/EnglishCalendarEve
 import { ScienceCalendarEvents } from '../data/subject-events/ScienceCalendarEvents'
 import { ReadingCalendarEvents } from '../data/subject-events/ReadingCalendarEvents'
 import { SocialStudiesCalendarEvents } from '../data/subject-events/SocialStudiesCalendarEvents'
+import EnglishGradeData from '../data/grades/EnglishGradeData'
+import MathGradeData from '../data/grades/MathGradeData'
+import ReadingGradeData from '../data/grades/ReadingGradeData'
+import SocialStudiesGradeData from '../data/grades/SocialStudiesGradeData'
+import ScienceGradeData from '../data/grades/ScienceGradeData'
+import { withRouter } from "react-router-dom";
+
 
 const wrapStackTokens = { childrenGap: 70 };
 
@@ -19,11 +26,11 @@ class Grades extends React.Component {
     //when users click on the card it should lead to destination route
     //todo: connect pages based on destination route
     //todo: best practice to move these hard coded values under its own directory & import them in. Make a json object elsewhere & map over it here
-    const math = new Course("Math", "Tim Johnson", "#E74856", "/math-grades", "https://i.imgur.com/Oi0eIGj.jpg", "87", "#ffffff", MathCalendarEvents);
-    const english = new Course("English", "Amy Tan", "#0078D7", "/english-grades", "https://i.imgur.com/f6DRdKK.jpg", "85", "#ffffff", EnglishCalendarEvents);
-    const science = new Course("Science", "Albert Einstein", "#00CC6A", "/science-grades", "https://i.imgur.com/jVuSHDV.jpg", "80", "#ffffff", ScienceCalendarEvents);
-    const socialStudies = new Course("Social Studies", "Andrew Johnson", "#f79914", '/social-studies-grades', 'https://i.imgur.com/SdMxPEq.jpg', "90", "#ffffff", SocialStudiesCalendarEvents);
-    const reading = new Course("Reading", "Alan Watts", "#B146C2", '/reading-grades', 'https://i.imgur.com/7FpdXft.jpg', "82", "#ffffff", ReadingCalendarEvents)
+    const math = new Course("Math", "Tim Johnson", "#E74856", "/math-grades", "https://i.imgur.com/Oi0eIGj.jpg", "87", "#ffffff", MathCalendarEvents, MathGradeData);
+    const english = new Course("English", "Amy Tan", "#0078D7", "/english-grades", "https://i.imgur.com/f6DRdKK.jpg", "85", "#ffffff", EnglishCalendarEvents, EnglishGradeData);
+    const science = new Course("Science", "Albert Einstein", "#00CC6A", "/science-grades", "https://i.imgur.com/jVuSHDV.jpg", "80", "#ffffff", ScienceCalendarEvents, ScienceGradeData);
+    const socialStudies = new Course("Social Studies", "Andrew Johnson", "#f79914", '/social-studies-grades', 'https://i.imgur.com/SdMxPEq.jpg', "90", "#ffffff", SocialStudiesCalendarEvents, SocialStudiesGradeData);
+    const reading = new Course("Reading", "Alan Watts", "#B146C2", '/reading-grades', 'https://i.imgur.com/7FpdXft.jpg', "82", "#ffffff", ReadingCalendarEvents, ReadingGradeData)
     
 
     this.state.courses.push(math);
@@ -43,11 +50,12 @@ class Grades extends React.Component {
               <h1>Grades</h1>    
             </Stack.Item>
 
+            {/* fixme: later - better to just pass the entire course object as a prop instead of long prop list below */}
             <Stack.Item styles={stackItemStyles}>              
               <Stack horizontal wrap tokens={wrapStackTokens}>
                   {this.state.courses.map(course => (
                       <Stack.Item>                      
-                       <GradesPageSubject subjectName={course.subjectName} teacherName={course.teacherName} courseColor={course.courseColor} destinationRoute={course.destinationRoute} courseImageURL={course.courseImageURL} gradePercent={course.gradePercent} cardTextColor={course.cardTextColor} />            
+                       <GradesPageSubject subjectName={course.subjectName} teacherName={course.teacherName} courseColor={course.courseColor} destinationRoute={course.destinationRoute} courseImageURL={course.courseImageURL} gradePercent={course.gradePercent} cardTextColor={course.cardTextColor} subjectGradeData={course.subjectGradeData} />            
                       </Stack.Item>
                   ))} 
               </Stack> 
@@ -59,5 +67,5 @@ class Grades extends React.Component {
     }
 }
 
-export default Grades;
+export default withRouter(Grades);
   

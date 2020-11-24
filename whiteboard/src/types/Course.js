@@ -1,5 +1,5 @@
 class Course {
-    constructor(subjectName, teacherName, courseColor, destinationRoute, courseImageURL, gradePercent, cardTextColor, calendarEvents ) {
+    constructor(subjectName, teacherName, courseColor, destinationRoute, courseImageURL, gradePercent, cardTextColor, calendarEvents, subjectGradeData ) {
       this.subjectName = subjectName;
       this.teacherName = teacherName;
       this.courseColor = courseColor;
@@ -9,6 +9,7 @@ class Course {
       this.gradePercent = gradePercent;
       this.cardTextColor = cardTextColor;    
       this.calendarEvents = calendarEvents;
+      this.subjectGradeData = subjectGradeData;
     }
 }
 

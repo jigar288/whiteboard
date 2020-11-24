@@ -3,7 +3,6 @@ import { ReadingCalendarEvents } from '../data/subject-events/ReadingCalendarEve
 import { EnglishCalendarEvents } from '../data/subject-events/EnglishCalendarEvents'
 import { ScienceCalendarEvents } from '../data/subject-events/ScienceCalendarEvents'
 import { SocialStudiesCalendarEvents } from '../data/subject-events/SocialStudiesCalendarEvents'
-// const now = new Date()
 
 // TODO: Add descriptions for each of the events!
 

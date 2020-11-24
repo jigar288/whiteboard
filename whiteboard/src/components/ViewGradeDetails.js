@@ -1,17 +1,30 @@
 import React from 'react';
 import { DefaultPalette, Stack } from 'office-ui-fabric-react';
-import { PrimaryButton } from '@fluentui/react';
+import { PrimaryButton, DefaultButton } from '@fluentui/react';
 import '../css/styles.css'
+import { withRouter } from "react-router-dom";
 
 
 
 class ViewGradeDetails extends React.Component {    
+
+    constructor(props){
+        super(props);
+        this.goBack = this.goBack.bind(this); 
+     }
+
+    // todo: fix this with history & withRouter
+    goBack(){
+        this.props.history.goBack();
+    }
+    
+
     render() {
 
         // Styles definition
         const stackStyles = {
             root: {
-            background: this.props.courseColor,
+            background: this.props.location.state.courseColor,
             },
         };
 
@@ -36,7 +49,7 @@ class ViewGradeDetails extends React.Component {
             background: DefaultPalette.white,
             color: DefaultPalette.black,
             display: 'flex',
-            height: 650,
+            height: 700,
             justifyContent: 'center',
             width: 500,
             },
@@ -62,15 +75,14 @@ class ViewGradeDetails extends React.Component {
         const numericalSpacingStackTokens = {
             childrenGap: 30,
             padding: 30,
-        };     
+        };  
         
-
       return (
         <div>
 
             <Stack horizontal styles={stackStyles} tokens={buttonStackTokens}>                
                 <Stack.Item grow disableShrink>
-                    <PrimaryButton onClick={this.props.showGradeList}> Back</PrimaryButton>
+                    <DefaultButton onClick={this.goBack}>Back</DefaultButton>
                 </Stack.Item>
             </Stack>
 
@@ -79,13 +91,13 @@ class ViewGradeDetails extends React.Component {
 
                     <Stack styles={innerStackStyles} tokens={numericalSpacingStackTokens}>                    
                         <Stack.Item className={stackItemStyles}>
-                            <h2>{this.props.assignmentName}</h2>                            
+                            <h2>{this.props.location.state.assignmentName}</h2>                            
                         </Stack.Item>
                         <Stack.Item className={stackItemStyles}>                            
-                            <h5>Assignment Grade: {this.props.assignmentGrade}</h5>
+                            <h5>Assignment Grade: {this.props.location.state.assignmentGrade}</h5>
                         </Stack.Item>
                         <Stack.Item className={stackItemStyles}  >
-                            <img src={this.props.imageURL} className="photo"></img>
+                            <img src={this.props.location.state.imageURL} className="photo"></img>
                         </Stack.Item>                       
                     </Stack>
 
@@ -98,7 +110,7 @@ class ViewGradeDetails extends React.Component {
                                 <h2>Teacher Feedback</h2>                            
                         </Stack.Item>
                         <Stack.Item className={stackItemStyles}>
-                            <p>{this.props.feedback}</p>                            
+                            <p>{this.props.location.state.feedback}</p>                            
                         </Stack.Item>
                     </Stack>                    
 
@@ -109,4 +121,4 @@ class ViewGradeDetails extends React.Component {
     }
 }
 
-export default ViewGradeDetails;
+export default withRouter(ViewGradeDetails);

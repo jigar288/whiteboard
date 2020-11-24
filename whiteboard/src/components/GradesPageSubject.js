@@ -6,6 +6,7 @@ import { FontWeights, Text, DefaultPalette, Stack } from 'office-ui-fabric-react
 import stackItemStyles from '../styles/commonStyles'
 import Circle from 'react-circle';
 import { withRouter } from "react-router-dom";
+import MathGradeData  from '../data/grades/MathGradeData'
 
 //! fixme: avoid tightly coupling subject & grade progress components --> since subjects will be used elsewhere
 //! fixme: rename the class
@@ -17,13 +18,14 @@ class GradesPageSubject extends React.Component {
 
 
     viewSubjectGrade = () => {
-      // destinationRoute is declare from 'Course' javascript class & defined via an object in Grades page
-      this.props.history.push(this.props.destinationRoute);
+      // destinationRoute is declare from 'Course' javascript class & defined via an object in Grades page 
+      this.props.history.push(this.props.destinationRoute, { subjectName: this.props.subjectName, gradePercent: this.props.gradePercent, courseColor: this.props.courseColor, subjectGradesData: this.props.subjectGradeData });
+      //todo: temp pass in math grades --> later pass in grade data with props from 'Course' js class      
     }
 
 
-    render() {
-        
+    render() {      
+
         const backgroundImageCardSectionStyles = {
             root: {
               backgroundImage: `url(${this.props.courseImageURL})`,

@@ -74,5 +74,5 @@ class CalendarSubjectCard extends React.Component {
     }
 }
 
-export default withRouter(CalendarSubjectCard);;
+export default withRouter(CalendarSubjectCard);
   

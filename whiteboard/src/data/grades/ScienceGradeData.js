@@ -1,45 +1,27 @@
 // TODO: Update details link
-export const ScienceGradeData = [
+const ScienceGradeData = [
     {
-        assignmentName: 'Science Quiz 1',
-        type: 'Quiz',
-        grade: 0,
-        details: '/link-to-details-page'
-    },
-    {
-        assignmentName: 'Science HW 3',
+        assignmentName: 'Homework 3: Planets',
         type: 'Homework',
-        grade: 85,
-        details: '/link-to-details-page'
+        grade: 100,
+        details: '/link-to-details-page',
+        imageHandout: 'https://i.imgur.com/ylCwBH9.png',
     },
+  
     {
-        assignmentName: 'Science Quiz 2',
+        assignmentName: 'Quiz 4: Rocks',
         type: 'Quiz',
-        grade: 0,
-        details: '/link-to-details-page'
-    },
+        grade: 85,
+        details: '/link-to-details-page',
+        imageHandout: 'https://cdn.discordapp.com/attachments/774708617151643659/780586493470310420/unknown.png',
+    }, 
     {
-        assignmentName: 'Science Exam 1',
+        assignmentName: 'Exam 1: Clouds',
         type: 'Exam',
-        grade: 96,
-        details: '/link-to-details-page'
-    },
-    {
-        assignmentName: 'Science Quiz 3',
-        type: 'Quiz',
-        grade: 100,
-        details: '/link-to-details-page'
-    },
-    {
-        assignmentName: 'Science Quiz 4',
-        type: 'Quiz',
-        grade: 85,
-        details: '/link-to-details-page'
-    },
-    {
-        assignmentName: 'Science HW 4',
-        type: 'Homework',
-        grade: 100,
-        details: '/link-to-details-page'
+        grade: 80,
+        details: '/link-to-details-page',
+        imageHandout: 'https://media.discordapp.net/attachments/774708617151643659/780586672693313566/unknown.png',
     }
+       
 ]
+export default ScienceGradeData;
