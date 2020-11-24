@@ -5,7 +5,7 @@ import {PrimaryButton, Stack, DefaultPalette, TextField, Label} from 'office-ui-
 import Home from './Home'
 import { Redirect } from "react-router-dom";
 
-
+import '../css/login.css'
 import {
   BrowserRouter as Router,
   Switch,
