@@ -5,6 +5,8 @@ import {PrimaryButton, Stack, DefaultPalette, TextField, Label} from 'office-ui-
 import Home from './Home'
 import { Redirect } from "react-router-dom";
 
+import '../css/login.css'
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -37,15 +39,16 @@ class Forgot extends React.Component {
     render() {
       return (
         <div className="Login">
-    
-          <Stack {...columnProps}>
-            <Label>Welcome To Whiteboard</Label>
-            <Label>Forgot Password</Label>
+          <Stack className="Stack" {...columnProps}>
+            <Label className="Label mx-auto">
+              <h4>Welcome To Whiteboard
+                </h4></Label>
+            <Label className="mx-auto"><h5>Forgot Password
+              </h5>  </Label>
             <TextField label="Enter Email To Reset Password" placeholder="Enter Email Here" />
             <PrimaryButton text="Reset Password" onClick={this._forgotClicked} allowDisabledFocus/>
             <PrimaryButton text="<- Back" onClick={this._backClicked} allowDisabledFocus/>
           </Stack>
-    
         </div>
       );
     }

@@ -28,7 +28,7 @@ class Login extends React.Component {
     }
   
     _loginClicked = () =>{
-        this.props.history.push("/");
+        this.props.history.push("/calendar");
     }
     _forgotPasswordClicked = () =>{
         this.props.history.push("/forgot");
