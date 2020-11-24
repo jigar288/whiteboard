@@ -8,7 +8,7 @@ import { initializeIcons } from '@uifabric/icons';
 import { Icon } from '@fluentui/react/lib/Icon';
 
 initializeIcons();
-const LogoIcon = () => <Icon iconName="FieldFilled" className='icons'/>
+const LogoIcon = () => <Icon iconName="WhiteBoardApp16" className='icons'/>
 
 const stackAlignment = {
     root: {
