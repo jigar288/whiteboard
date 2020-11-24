@@ -41,7 +41,7 @@ const columnProps = {
   styles: { root: { width: 600 } },
 };
 
-class SubmitAssignment extends React.Component {
+class SubmitAssignmentComponent extends React.Component {
 
   constructor(props){
     super(props);
@@ -132,4 +132,4 @@ class SubmitAssignment extends React.Component {
     }
 }
 
-export default withRouter(SubmitAssignment);
+export default withRouter(SubmitAssignmentComponent);
