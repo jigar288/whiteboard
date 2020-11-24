@@ -26,7 +26,8 @@ class Login extends React.Component {
       super(props);
       this.state = {courses: []}
     }
-  
+
+
     _loginClicked = () =>{
         this.props.history.push("/calendar");
     }
@@ -36,27 +37,31 @@ class Login extends React.Component {
 
     _back = () => {
         this.props.history.push("/homelogin");
-    }
+    } 
+
     
     render() {
       return (
-        <div className="Login">
     
-          <Stack className="Stack" {...columnProps}>
-            <Label className="Label mx-auto">
-              <h4>Welcome To Whiteboard
-                </h4></Label>
-            <Label className="mx-auto"><h5>Login
-              </h5>  </Label>
-            <TextField label="Email" placeholder="Enter Email Here" />
-            <TextField label="Password" placeholder="Enter Password Here" type="password" canRevealPassword />
-            <PrimaryButton text="Login" onClick={this._loginClicked} allowDisabledFocus/>
-            <PrimaryButton text="Forgot Password?" onClick={this._forgotPasswordClicked} allowDisabledFocus/>
-            <Label></Label>
-            <PrimaryButton text="<-- Back" onClick={this._back} allowDisabledFocus/>
-          </Stack>
+        <div className="Login">
+            <Form>
+            <Stack className="Stack" {...columnProps}>
+                <Label className="Label mx-auto">
+                <h4>Welcome To Whiteboard
+                    </h4></Label>
+                <Label className="mx-auto"><h5>Login
+                </h5>  </Label>
+                <TextField label="Email" placeholder="Enter Email Here"/>
+                <TextField label="Password" placeholder="Enter Password Here" type="password" canRevealPassword />
+                <PrimaryButton text="Login" onClick={this._loginClicked} allowDisabledFocus/>
+                <PrimaryButton text="Forgot Password?" onClick={this._forgotPasswordClicked} allowDisabledFocus onRengerIcon="Back"/>
+                <Label></Label>
+                <PrimaryButton text="<-- Back" onClick={this._back} allowDisabledFocus/>
+            </Stack>
+          </Form>
     
         </div>
+        
       );
     }
   }

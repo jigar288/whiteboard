@@ -5,6 +5,8 @@ import {PrimaryButton, Stack, DefaultPalette, TextField, Label} from 'office-ui-
 import Home from './Home'
 import { Redirect } from "react-router-dom";
 
+import '../css/login.css'
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -39,7 +41,9 @@ class HomeLogin extends React.Component {
         <div className="Login">
     
           <Stack {...columnProps}>
-            <Label>Welcome To Whiteboard</Label>
+          <Label className="Label mx-auto">
+              <h4>Welcome To Whiteboard
+                </h4></Label>
             <PrimaryButton text="Student Portal" onClick={this._studentClicked} allowDisabledFocus/>
             <PrimaryButton text="Parent Portal" onClick={this._parentClicked} allowDisabledFocus/>
           </Stack>
