@@ -19,7 +19,7 @@ const stackStyles = {
 };
 
 const verticalGapStackTokens = {
-  childrenGap: 100,
+  childrenGap: 70,
   padding: 35,
 };
 
@@ -74,7 +74,7 @@ class Calendar extends React.Component {
       <div>
         <Stack styles={stackStyles} tokens={verticalGapStackTokens} >
           <Stack.Item order={1}>
-            <NavigationBar className='test'/>
+            <NavigationBar className='Calendar' classRef='/calendar'/>
           </Stack.Item>
           <Stack.Item order={2}>
                         

@@ -6,3 +6,17 @@
 .classStack {
     min-height: 100vh;
 }
+
+.tabs {
+    transform: scale(1.5);
+}
+
+.icons {
+    transform: scale(5);
+    padding: 20px;
+}
+
+.title {
+    transform: scale(2);
+    margin-right: 100px;
+}

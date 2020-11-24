@@ -18,6 +18,10 @@ import NavigationBar from '../components/NavigationBar';
 
 
 const wrapStackTokens = { childrenGap: 70 };
+const verticalGapStackTokens = {
+  childrenGap: 90,
+  padding: 35,
+};
 
 class Grades extends React.Component {
   constructor(props){
@@ -44,18 +48,18 @@ class Grades extends React.Component {
     render() {
       return(
         <div>           
-          <Stack>
+          <Stack tokens={verticalGapStackTokens}>
 
-            <Stack.Item styles={stackItemStyles}>          
+            {/* <Stack.Item styles={stackItemStyles}>          
               {/* todo: add a back button using horizontal Stack within this item */}
-              <h1>Grades</h1>    
-            </Stack.Item>
-            <Stack.Item>
-              <NavigationBar/>
+              {/* <h1>Grades</h1>     */}
+            {/* </Stack.Item> */}
+            <Stack.Item order={1}>
+              <NavigationBar className='Grades' classRef='/grades'/>
             </Stack.Item>
 
             {/* fixme: later - better to just pass the entire course object as a prop instead of long prop list below */}
-            <Stack.Item styles={stackItemStyles}>              
+            <Stack.Item styles={stackItemStyles} order={2}>              
               <Stack horizontal wrap tokens={wrapStackTokens}>
                   {this.state.courses.map(course => (
                       <Stack.Item>                      
