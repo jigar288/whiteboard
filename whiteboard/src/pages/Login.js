@@ -42,9 +42,12 @@ class Login extends React.Component {
       return (
         <div className="Login">
     
-          <Stack {...columnProps}>
-            <Label>Welcome To Whiteboard</Label>
-            <Label>Login</Label>
+          <Stack className="Stack" {...columnProps}>
+            <Label className="Label mx-auto">
+              <h4>Welcome To Whiteboard
+                </h4></Label>
+            <Label className="mx-auto"><h5>Login
+              </h5>  </Label>
             <TextField label="Email" placeholder="Enter Email Here" />
             <TextField label="Password" placeholder="Enter Password Here" type="password" canRevealPassword />
             <PrimaryButton text="Login" onClick={this._loginClicked} allowDisabledFocus/>
