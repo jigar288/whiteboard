@@ -30,7 +30,11 @@ class Login extends React.Component {
         this.props.history.push("/");
     }
     _forgotPasswordClicked = () =>{
-        this.props.history.push("/");
+        this.props.history.push("/forgot");
+    }
+
+    _back = () => {
+        this.props.history.push("/homelogin");
     }
     
     render() {
@@ -43,8 +47,9 @@ class Login extends React.Component {
             <TextField label="Email" placeholder="Enter Email Here" />
             <TextField label="Password" placeholder="Enter Password Here" type="password" canRevealPassword />
             <PrimaryButton text="Login" onClick={this._loginClicked} allowDisabledFocus/>
-            <Label></Label>
             <PrimaryButton text="Forgot Password?" onClick={this._forgotPasswordClicked} allowDisabledFocus/>
+            <Label></Label>
+            <PrimaryButton text="<-- Back" onClick={this._back} allowDisabledFocus/>
           </Stack>
     
         </div>
