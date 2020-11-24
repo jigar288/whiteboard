@@ -8,7 +8,14 @@ import { EnglishCalendarEvents } from '../data/subject-events/EnglishCalendarEve
 import { ScienceCalendarEvents } from '../data/subject-events/ScienceCalendarEvents'
 import { ReadingCalendarEvents } from '../data/subject-events/ReadingCalendarEvents'
 import { SocialStudiesCalendarEvents } from '../data/subject-events/SocialStudiesCalendarEvents'
-import NavigationBar from '../components/NavigationBar'
+import EnglishGradeData from '../data/grades/EnglishGradeData'
+import MathGradeData from '../data/grades/MathGradeData'
+import ReadingGradeData from '../data/grades/ReadingGradeData'
+import SocialStudiesGradeData from '../data/grades/SocialStudiesGradeData'
+import ScienceGradeData from '../data/grades/ScienceGradeData'
+import { withRouter } from "react-router-dom";
+import NavigationBar from '../components/NavigationBar';
+
 
 const wrapStackTokens = { childrenGap: 70 };
 
