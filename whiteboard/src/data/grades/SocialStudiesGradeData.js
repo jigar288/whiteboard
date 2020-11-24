@@ -5,6 +5,7 @@ export const SocialStudiesGradeData = [
         type: 'Homework',
         grade: 100,
         details: '/link-to-details-page',
+        imageHandout: 'https://cdn.discordapp.com/attachments/774708617151643659/780587153959944243/unknown.png',
     },
   
     {
@@ -12,23 +13,20 @@ export const SocialStudiesGradeData = [
         type: 'Quiz',
         grade: 85,
         details: '/link-to-details-page',
+        imageHandout:'https://cdn.discordapp.com/attachments/774708617151643659/780587153959944243/unknown.png',
     }, 
     {
         assignmentName: 'Exam 1: Oceans',
         type: 'Exam',
         grade: 80,
         details: '/link-to-details-page',
+        imageHandout:'https://i.imgur.com/FE7rBtw.png',
     },
     {
         assignmentName: 'Quiz 3: Biomes',
         type: 'Quiz',
         grade: 75,
         details: '/link-to-details-page',
-    }, 
-    {
-        assignmentName: 'Quiz 2: Presidents',
-        type: 'Quiz',
-        grade: 95,
-        details: '/link-to-details-page',
-    }     
+        imageHandout:'https://cdn.discordapp.com/attachments/774708617151643659/780587823500886036/unknown.png',
+    },   
 ]
