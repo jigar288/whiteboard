@@ -9,6 +9,7 @@ import Grades from './pages/Grades'
 import MathGrades from './pages/MathGrades';
 import Calendar from './pages/Calendar'
 import Home from './pages/Home'
+import Help from './pages/help'
 import EventsByCourse from './components/EventsByCourse'
 import App from './App'
 
@@ -26,6 +27,7 @@ ReactDOM.render(
     {/* <MathGrades/> */}
     {/* <MathGrades/> */}
     {/* <Calendar/>     */}
+    {/* <Help/>    */}
     {/* <EventsByCourse/> */}
     <App/>
   </React.StrictMode>,

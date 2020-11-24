@@ -8,6 +8,7 @@ import {
 import Grades from './pages/Grades'
 import MathGrades from './pages/MathGrades';
 import Calendar from './pages/Calendar'
+import Help from './pages/help'
 import Home from './pages/Home'
 import EventsByCourse from './components/EventsByCourse'
 import SubmitAssignment from './components/SubmitAssignment'
@@ -22,7 +23,8 @@ function App() {
           <Route exact path="/calendar" component={Calendar} />
           <Route exact path="/events" component={EventsByCourse} />
           <Route exact path="/math-grades" component={MathGrades} />
-          <Route exact path="/submit-assignment" component={SubmitAssignment} />          
+          <Route exact path="/submit-assignment" component={SubmitAssignment} />    
+          <Route exact path="/help" component={Help} />     
           <Route exact path="/" component={Home} />
         </Switch>
       </div>
