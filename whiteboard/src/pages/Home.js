@@ -30,6 +30,9 @@ class Home extends React.Component {
                     <li>
                     <Link to="/calendar">Calendar</Link>
                     </li>
+                    <li>
+                    <Link to="/submit-assignments">Submit Assignments</Link>
+                    </li>                    
                 </ul>
             </nav>
           </div>

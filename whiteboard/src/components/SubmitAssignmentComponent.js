@@ -90,11 +90,11 @@ class SubmitAssignmentComponent extends React.Component {
 
                     <Stack horizontal tokens={stackTokens}>                     
                       <Stack.Item grow={3} styles={stackItemStyles}>                        
-                        <h5>Due date: </h5>
+                          <h5>Due date: {this.props.location.state.dueDate} </h5>
                       </Stack.Item>
 
                       <Stack.Item grow={3} styles={stackItemStyles}>                      
-                        <h5>Assignment Name: </h5>
+                        <h5>Assignment Name: {this.props.location.state.assignmentName} </h5>
                       </Stack.Item>
                     </Stack>
 
