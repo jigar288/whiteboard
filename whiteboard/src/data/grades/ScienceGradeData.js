@@ -4,6 +4,7 @@ export const ScienceGradeData = [
         type: 'Homework',
         grade: 100,
         details: '/link-to-details-page',
+        imageHandout: 'https://i.imgur.com/ylCwBH9.png',
     },
   
     {
@@ -11,23 +12,14 @@ export const ScienceGradeData = [
         type: 'Quiz',
         grade: 85,
         details: '/link-to-details-page',
+        imageHandout: 'https://cdn.discordapp.com/attachments/774708617151643659/780586493470310420/unknown.png',
     }, 
     {
         assignmentName: 'Exam 1: Clouds',
         type: 'Exam',
         grade: 80,
         details: '/link-to-details-page',
+        imageHandout: 'https://media.discordapp.net/attachments/774708617151643659/780586672693313566/unknown.png',
     },
-    {
-        assignmentName: 'Quiz 3: Subtraction',
-        type: 'Quiz',
-        grade: 75,
-        details: '/link-to-details-page',
-    }, 
-    {
-        assignmentName: 'Quiz 2: Addition',
-        type: 'Quiz',
-        grade: 95,
-        details: '/link-to-details-page',
-    }     
+       
 ]
