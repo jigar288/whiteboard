@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
-import CalendarComponent from '../components/CalendarComponent'
+import CalendarComponent from '../components/CalendarComponent';
+import NavigationBar from '../components/NavigationBar';
 import { Stack, DefaultPalette, AutoScroll, PrimaryButton } from 'office-ui-fabric-react';
 import Course from '../types/Course'
 import CalendarSubjectCard from '../components/CalendarSubjectCard'
@@ -18,7 +19,7 @@ const stackStyles = {
 };
 
 const verticalGapStackTokens = {
-  childrenGap: 130,
+  childrenGap: 70,
   padding: 35,
 };
 
@@ -71,11 +72,13 @@ class Calendar extends React.Component {
 
     return (
       <div>
-        
         <Stack styles={stackStyles} tokens={verticalGapStackTokens} >
           <Stack.Item order={1}>
+            <NavigationBar className='Calendar' classRef='/calendar'/>
+          </Stack.Item>
+          <Stack.Item order={2}>
                         
-            <Stack tokens={sectionStackTokens}>
+            <Stack styles={stackItemStyles} tokens={sectionStackTokens}>
               <Stack horizontal wrap styles={cardsStackStyles} tokens={wrapStackTokens}>
 
 
@@ -89,7 +92,7 @@ class Calendar extends React.Component {
             </Stack>                      
 
           </Stack.Item>
-          <Stack.Item order={2}>
+          <Stack.Item order={3}>
 
             <CalendarComponent/>
 
@@ -104,5 +107,3 @@ class Calendar extends React.Component {
 }
 
 export default Calendar;
-
-  

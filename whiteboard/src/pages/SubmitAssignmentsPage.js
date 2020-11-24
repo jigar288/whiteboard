@@ -10,6 +10,7 @@ import { ReadingCalendarEvents } from '../data/subject-events/ReadingCalendarEve
 import { SocialStudiesCalendarEvents } from '../data/subject-events/SocialStudiesCalendarEvents'
 import { Stack, DefaultPalette} from 'office-ui-fabric-react';
 import { withRouter } from "react-router-dom";
+import NavigationBar from '../components/NavigationBar';
 
 
 // TODO:
@@ -69,6 +70,7 @@ class SubmitAssignmentsPage extends React.Component {
           
        <Stack.Item order={1}>
             {/* try putting menu bar here */}
+            <NavigationBar className='Submit Assignments' classRef='/submit-assignments'/>
        </Stack.Item>
           
           <Stack.Item order={2}>                        
