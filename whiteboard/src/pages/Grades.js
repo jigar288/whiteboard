@@ -8,6 +8,7 @@ import { EnglishCalendarEvents } from '../data/subject-events/EnglishCalendarEve
 import { ScienceCalendarEvents } from '../data/subject-events/ScienceCalendarEvents'
 import { ReadingCalendarEvents } from '../data/subject-events/ReadingCalendarEvents'
 import { SocialStudiesCalendarEvents } from '../data/subject-events/SocialStudiesCalendarEvents'
+import NavigationBar from '../components/NavigationBar'
 
 const wrapStackTokens = { childrenGap: 70 };
 
@@ -41,6 +42,9 @@ class Grades extends React.Component {
             <Stack.Item styles={stackItemStyles}>          
               {/* todo: add a back button using horizontal Stack within this item */}
               <h1>Grades</h1>    
+            </Stack.Item>
+            <Stack.Item>
+              <NavigationBar/>
             </Stack.Item>
 
             <Stack.Item styles={stackItemStyles}>              

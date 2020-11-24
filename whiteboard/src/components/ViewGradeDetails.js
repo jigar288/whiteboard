@@ -62,12 +62,10 @@ class ViewGradeDetails extends React.Component {
         const numericalSpacingStackTokens = {
             childrenGap: 30,
             padding: 30,
-        };     
-        
+        };
 
       return (
         <div>
-
             <Stack horizontal styles={stackStyles} tokens={buttonStackTokens}>                
                 <Stack.Item grow disableShrink>
                     <PrimaryButton onClick={this.props.showGradeList}> Back</PrimaryButton>
