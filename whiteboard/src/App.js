@@ -17,6 +17,7 @@ import SubmitAssignmentComponent from './components/SubmitAssignmentComponent'
 import HomeLogin from './pages/HomeLogin'
 import Login from './pages/Login'
 import Forgot from './pages/Forgot'
+import Help from './pages/Help'
 
 function App() {
   return (
@@ -38,7 +39,8 @@ function App() {
           <Route exact path="/home-login" component={HomeLogin} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/forgot" component={Forgot} />
-          <Route exact path="/" component={Home} />
+          <Route exact path="/help" component={Help} />
+          <Route exact path="/" component={HomeLogin} />
         </Switch>
       </div>
     </Router>

@@ -8,7 +8,7 @@ import { initializeIcons } from '@uifabric/icons';
 import { Icon } from '@fluentui/react/lib/Icon';
 
 initializeIcons();
-const LogoIcon = () => <Icon iconName="FieldFilled" className='icons'/>
+const LogoIcon = () => <Icon iconName="WhiteBoardApp16" className='icons'/>
 
 const stackAlignment = {
     root: {
@@ -69,7 +69,7 @@ class NavigationBar extends React.Component {
                                 <Nav.Link href='/submit-assignments' onClick={(e) => this.shouldDisable('/submit-assignments', e)}>Submit Assignment</Nav.Link>
                             </Nav.Item>
                             <Nav.Item>
-                                <Nav.Link href='/' onClick={(e) => this.shouldDisable('/', e)}>Help</Nav.Link>
+                                <Nav.Link href='/help' onClick={(e) => this.shouldDisable('/help', e)}>Help</Nav.Link>
                             </Nav.Item>                            
                             <Nav.Item>
                                 <Nav.Link href='/home-login' onClick={(e) => this.shouldDisable('/', e)}>Logout</Nav.Link>
