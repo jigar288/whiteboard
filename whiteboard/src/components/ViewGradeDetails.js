@@ -79,7 +79,6 @@ class ViewGradeDetails extends React.Component {
         
       return (
         <div>
-
             <Stack horizontal styles={stackStyles} tokens={buttonStackTokens}>                
                 <Stack.Item grow disableShrink>
                     <DefaultButton onClick={this.goBack}>Back</DefaultButton>
