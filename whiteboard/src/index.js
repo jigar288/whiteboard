@@ -11,6 +11,7 @@ import Calendar from './pages/Calendar'
 import Home from './pages/Home'
 import EventsByCourse from './components/EventsByCourse'
 import App from './App'
+import Login from './pages/Login'
 
 import {
   BrowserRouter as Router,
@@ -27,6 +28,7 @@ ReactDOM.render(
     {/* <MathGrades/> */}
     {/* <Calendar/>     */}
     {/* <EventsByCourse/> */}
+    { <Login/> }
     <App/>
   </React.StrictMode>,
   document.getElementById('root')

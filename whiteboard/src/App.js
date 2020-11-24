@@ -11,6 +11,7 @@ import Calendar from './pages/Calendar'
 import Home from './pages/Home'
 import EventsByCourse from './components/EventsByCourse'
 import SubmitAssignment from './components/SubmitAssignment'
+import Login from './pages/Login'
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <div>
         <Switch>
           <Route exact path="/grades" component={Grades} />
+          <Route exact path="/login" component={Login} />
           <Route exact path="/calendar" component={Calendar} />
           <Route exact path="/events" component={EventsByCourse} />
           <Route exact path="/math-grades" component={MathGrades} />
