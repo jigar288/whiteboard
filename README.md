@@ -25,5 +25,5 @@ https://xd.adobe.com/view/ba2af111-9193-4fa4-8055-e2a52d2cc104-ef79/
 # Languages and Technologies
 
 * React
-* React Bootstrap
+* React Bootstrap UI
 * Microsoft Fluent UI
