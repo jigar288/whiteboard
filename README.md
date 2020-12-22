@@ -1,7 +1,16 @@
 # whiteboard
 
-WhiteBoard is a school portal designed for younger students to track assignments, grades, and events. This project was part of UIC CS 422: User Interface Design & Programming. This project considered usability principles such as learnability, safety, efficiency. Check out our youtube demo video
+WhiteBoard is a school portal designed for younger students to track assignments, grades, and events. This project was a semester long project that consisted of multiple phases and was part of UIC CS 422: User Interface Design & Programming. This project considered usability principles such as learnability, safety, efficiency. 
 
+Project phases: 
+
+Phase 1: Problem Statement
+Phase 2: Project Proposal and Analysis
+Phase 3: Design
+Phase 4: Paper Prototype 
+Phase 5: Computer Prototype (Adobe XD)
+Phase 6: Functional UI Development
+Phase 7: Final User Testing
 
 
 # Video demonstration
