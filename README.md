@@ -4,13 +4,13 @@ WhiteBoard is a school portal designed for younger students to track assignments
 
 Project phases: 
 
-Phase 1: Problem Statement
-Phase 2: Project Proposal and Analysis
-Phase 3: Design
-Phase 4: Paper Prototype 
-Phase 5: Computer Prototype (Adobe XD)
-Phase 6: Functional UI Development
-Phase 7: Final User Testing
+* Phase 1: Problem Statement
+* Phase 2: Project Proposal and Analysis
+* Phase 3: Design
+* Phase 4: Paper Prototype 
+* Phase 5: Computer Prototype (Adobe XD)
+* Phase 6: Functional UI Development
+* Phase 7: Final User Testing
 
 
 # Video demonstration
