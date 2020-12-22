@@ -1,6 +1,6 @@
 # whiteboard
 
-WhiteBoard is a project for UIC CS 422: User Interface Design & Programming. Check out our youtube demo video
+WhiteBoard is a school portal designed for younger students to track assignments, grades, and events. This project was part of UIC CS 422: User Interface Design & Programming. Check out our youtube demo video
 
 
 
