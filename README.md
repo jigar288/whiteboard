@@ -1,6 +1,6 @@
 # whiteboard
 
-WhiteBoard is a school portal designed for younger students to track assignments, grades, and events. This project was part of UIC CS 422: User Interface Design & Programming. Check out our youtube demo video
+WhiteBoard is a school portal designed for younger students to track assignments, grades, and events. This project was part of UIC CS 422: User Interface Design & Programming. The usability principles this project factored in are learnability, safety, efficiency. Check out our youtube demo video
 
 
 
@@ -16,7 +16,7 @@ tasks.
 
 # Interactive Prototype
 
-This Adobe XD interactive protptype was designed prior to the fully implemented functional prototype.
+This Adobe XD interactive protptype was designed prior to the fully implemented functional prototype and incorporated user feedback.
 
 https://xd.adobe.com/view/ba2af111-9193-4fa4-8055-e2a52d2cc104-ef79/
 
