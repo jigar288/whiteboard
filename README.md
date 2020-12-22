@@ -3,7 +3,6 @@
 WhiteBoard is a school portal designed for younger students to track assignments, grades, and events. This project was a semester long project that consisted of multiple phases and was part of UIC CS 422: User Interface Design & Programming. This project considered usability principles such as learnability, safety, efficiency. 
 
 Project phases: 
-
 * Phase 1: Problem Statement
 * Phase 2: Project Proposal and Analysis
 * Phase 3: Design
@@ -11,6 +10,8 @@ Project phases:
 * Phase 5: Computer Prototype (Adobe XD)
 * Phase 6: Functional UI Development
 * Phase 7: Final User Testing
+
+Group: Jigar Patel, Jared Manusig, Darius Alasu, Michael Wiszowaty, Arpita Kumari 
 
 
 # Video demonstration
